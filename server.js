@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/public_html'));
 
 mongoose.set('strictQuery', true);
-const connection_string = "mongodb+srv://jumabaevnurxat18:xJ2uFjDT5HvXDoCy@cluster0.gq9oyqr.mongodb.net/?retryWrites=true&w=majority";
+const connection_string = "mongodb://localhost:27017/ostaa";
 
 mongoose.connect(connection_string, {useNewUrlParser:true});
 mongoose.connections.concat('error', () =>{
